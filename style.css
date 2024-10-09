@@ -3,194 +3,174 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: Arial, sans-serif;
 }
 
 body {
-    line-height: 1.6;
+    font-family: Arial, sans-serif;
+    margin-top: 120px;
 }
 
-nav ul {
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    background-color: #fff;
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+}
+
+.logo img {
+    width: 40px;
+    margin-right: 10px;
+}
+
+.navbar ul {
     display: flex;
     list-style: none;
-    justify-content: center;
-    background-color: #333;
-    padding: 1rem;
 }
 
-nav ul li {
-    margin: 0 1rem;
+.navbar li {
+    margin: 0 15px;
 }
 
-nav ul li a {
-    color: white;
+.navbar a {
     text-decoration: none;
-    font-size: 1.2rem;
+    color: #000;
 }
 
-header {
+.social-icons a {
+    margin-left: 10px;
+}
+
+.hero {
+    position: relative;
     text-align: center;
-    background: url('chocolate-banner.jpg') no-repeat center/cover;
     color: white;
-    padding: 5rem 0;
 }
 
-header h1 {
-    font-size: 3rem;
+.hero-background {
+    width: 100%;
+    height: auto;
 }
 
-header p {
-    font-size: 1.5rem;
+.hero-content {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    max-width: 800px;
 }
 
-button {
-    padding: 1rem 2rem;
-    background-color: #ff8c00;
-    color: white;
+.hero h1 {
+    font-size: 2rem;
+    margin-bottom: 20px;
+}
+
+.hero-buttons {
+    margin-bottom: 20px;
+}
+
+.hero-buttons button {
+    padding: 10px 20px;
+    margin: 0 10px;
     border: none;
-    font-size: 1.2rem;
     cursor: pointer;
+    font-size: 1rem;
 }
 
-button:hover {
-    background-color: #e57a00;
+.btn-buy {
+    background-color: #e67e22;
+    color: #fff;
+}
+
+.btn-learn {
+    background-color: transparent;
+    border: 2px solid #fff;
+    color: #fff;
+}
+
+.scroll-text {
+    font-size: 0.9rem;
 }
 
 .features {
     display: flex;
-    justify-content: space-around;
-    background-color: #f4f4f4;
-    padding: 3rem;
-    text-align: center;
-}
-
-.features .feature {
-    width: 30%;
-}
-
-.ingredients {
-    padding: 3rem;
-    text-align: center;
-}
-
-.ingredients .ingredient-list {
-    display: flex;
-    justify-content: center;
-    gap: 2rem;
-}
-
-.ingredients .ingredient {
-    text-align: center;
-}
-
-.chocolate-video {
-    text-align: center;
-    padding: 3rem;
-}
-
-.chocolate-video video {
-    width: 80%;
-    max-width: 700px;
-}
-
-.best-sellers {
-    padding: 3rem;
-    text-align: center;
-}
-
-.best-sellers .products {
-    display: flex;
-    justify-content: center;
-    gap: 2rem;
-}
-
-.best-sellers .product img {
-    width: 150px;
-}
-
-.reviews {
-    background-color: #f4f4f4;
-    padding: 3rem;
-    text-align: center;
-}
-
-.reviews .reviews-list {
-    display: flex;
-    justify-content: space-around;
-}
-
-footer {
-    background-color: #333;
+    justify-content: space-between;
+    padding: 40px;
+    background-color: #1b1b1d;
     color: white;
-    text-align: center;
-    padding: 1rem;
 }
+
+.feature-item {
+    flex: 1;
+    padding: 20px;
+    text-align: center;
+}
+
+.feature-item h3 {
+    font-size: 1.5rem;
+    margin-top: 20px;
+}
+
+.feature-item p {
+    margin-top: 10px;
+    line-height: 1.6;
+}
+
+.feature-icon img {
+    width: 50px;
+}
+
+
+.feature-item:not(:last-child) {
+    border-right: 1px solid #555;
+}
+
 
 @media (max-width: 768px) {
-    nav ul {
-        flex-direction: column;
-    }
-
-    header {
-        padding: 3rem 0;
-    }
-
-    header h1 {
-        font-size: 2rem;
-    }
-
-    header p {
-        font-size: 1.2rem;
-    }
-
     .features {
         flex-direction: column;
-        padding: 2rem;
+        align-items: center;
     }
 
-    .features .feature {
-        width: 100%;
-        margin-bottom: 1rem;
+    .feature-item {
+        padding: 20px 0;
+        border-right: none;
+        border-bottom: 1px solid #555;
     }
 
-    .ingredients .ingredient-list {
-        flex-direction: column;
-        gap: 1rem;
+    .feature-item:not(:last-child) {
+        border-bottom: 1px solid #555;
+    }
+}
+
+
+@media (max-width: 768px) {
+    .hero h1 {
+        font-size: 1.5rem;
     }
 
-    .best-sellers .products {
-        flex-direction: column;
-        gap: 1rem;
-    }
-
-    .reviews .reviews-list {
-        flex-direction: column;
-    }
-
-    .reviews .review {
-        margin-bottom: 1rem;
+    .hero-buttons button {
+        padding: 8px 16px;
+        font-size: 0.9rem;
     }
 }
 
 @media (max-width: 480px) {
-    button {
-        padding: 0.8rem 1.5rem;
-        font-size: 1rem;
+    .hero-content {
+        max-width: 90%;
     }
 
-    header h1 {
-        font-size: 1.8rem;
+    .navbar ul {
+        flex-direction: column;
+        align-items: center;
     }
 
-    header p {
-        font-size: 1rem;
-    }
-
-    .features {
-        padding: 1.5rem;
-    }
-
-    .chocolate-video video {
-        width: 100%;
+    .navbar li {
+        margin: 10px 0;
     }
 }
