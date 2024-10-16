@@ -1,4 +1,3 @@
-
 * {
     margin: 0;
     padding: 0;
@@ -7,7 +6,9 @@
 
 body {
     font-family: Arial, sans-serif;
+   
 }
+
 
 .header {
     display: flex;
@@ -139,7 +140,7 @@ body {
 h1 {
     font-size: 2rem;
     line-height: 1.2;
-    color: #333;
+   
 }
 
 .highlight {
@@ -192,6 +193,148 @@ h1 {
     width: 150px; /* Задайте размеры наложенного изображения */
     height: auto; /* Сохраняйте пропорции изображения */
     opacity: 0.8; /* Прозрачность наложенного изображения */
+}
+
+.containerr {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 20px;
+    max-width: 1000px;
+    margin: 0 auto;
+}
+
+.card {
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    text-align: center;
+}
+
+.card img {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+}
+
+.card h2 {
+    font-size: 18px;
+    margin: 10px 0;
+}
+
+.card p {
+    color: #666;
+    margin-bottom: 10px;
+}
+
+.price {
+    font-size: 20px;
+    font-weight: bold;
+    color: #333;
+}
+
+.divs{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    background-color: #f4f4f4;
+    border-radius: 10px;
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+  
+  .video-section {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 10px;
+  }
+  
+  .video {
+    width: 45%;
+  }
+  
+  .text {
+    width: 50%;
+  }
+  
+  h2 {
+    font-size: 24px;
+    margin-bottom: 10px;
+  }
+  
+  ul {
+    list-style-type: disc;
+    padding-left: 20px;
+  }
+  
+  li {
+    margin-bottom: 10px;
+    font-size: 16px;
+  }
+  
+  .top-sellers {
+    
+    background-color: #fff;
+    padding: 20px;
+    padding-top: 20px;
+    border-radius: 15px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    max-width: 900px;
+    width: 100%;
+
+}
+
+.top-sellers h2 {
+    text-align: center;
+    font-size: 2em;
+    margin-bottom: 20px;
+}
+
+.top-sellers h2 span {
+    color: #f39c12;
+}
+
+.products {
+    display: flex;
+    justify-content: space-between;
+    gap: 15px;
+    margin-bottom: 10px;
+}
+
+.product img {
+    width: 100%;
+    border-radius: 10px;
+    height: auto;
+    max-height: 250px;
+    object-fit: cover;
+}
+
+.description {
+    font-size: 1em;
+    color: #666;
+    margin: 20px 0;
+}
+
+.buy-now {
+    padding: 10px 20px;
+    background-color: #f39c12;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    font-size: 1.1em;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.buy-now:hover {
+    background-color: #e67e22;
+}
+
+@media (max-width: 768px) {
+    .products {
+        flex-direction: column;
+    }
 }
 
 @media (max-width: 768px) {
