@@ -188,11 +188,11 @@ h1 {
 
 .play {
     position: absolute;
-    top: 20px; /* Отступ от верхнего края */
-    left: 20px; /* Отступ от левого края */
-    width: 150px; /* Задайте размеры наложенного изображения */
-    height: auto; /* Сохраняйте пропорции изображения */
-    opacity: 0.8; /* Прозрачность наложенного изображения */
+    top: 20px; 
+    left: 20px; 
+    width: 150px; 
+    height: auto; 
+    opacity: 0.8; 
 }
 
 .containerr {
@@ -415,7 +415,7 @@ h1 {
     background-color: #e67e22;
 }
 
-/* Mobile styling */
+
 @media (max-width: 768px) {
     body {
         padding: 72px;
@@ -454,14 +454,14 @@ h1 {
         border-bottom: 1px solid #555;
     }
 }
-/* General Container Styling */
+
 .container {
     width: 90%;
     max-width: 1200px;
     margin: 0 auto;
 }
 
-/* Subscribe Section */
+
 .subscribe-section {
     background: url('./img/Subcribe.png') no-repeat center center/cover;
     padding: 80px 0;
